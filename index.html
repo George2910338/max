@@ -90,4 +90,2940 @@ button{
 }
 
 .logo{
-  font
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  display:inline-block;
+  width:9px;
+  height:9px;
+  background:var(--lime);
+  border-radius:50%;
+  margin-left:4px;
+}
+
+.menu{
+  display:flex;
+  gap:26px;
+  font-size:14px;
+}
+
+.menu a{
+  transition:.2s;
+}
+
+.menu a:hover{
+  opacity:.55;
+}
+
+.phone{
+  font-weight:800;
+  white-space:nowrap;
+}
+
+/* HERO */
+
+.hero{
+  padding:90px 0 70px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:40px;
+  align-items:end;
+}
+
+.eyebrow{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:var(--muted);
+  font-weight:800;
+}
+
+.hero h1{
+  font-size:clamp(52px,8vw,104px);
+  line-height:.88;
+  letter-spacing:-.075em;
+  margin:18px 0 28px;
+  max-width:900px;
+}
+
+.hero p{
+  font-size:20px;
+  color:var(--muted);
+  max-width:620px;
+  margin:0;
+}
+
+.hero-card{
+  background:var(--dark);
+  color:white;
+  border-radius:32px;
+  padding:28px;
+  min-height:330px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  overflow:hidden;
+  position:relative;
+}
+
+.hero-card:after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  background:var(--lime);
+  right:-90px;
+  bottom:-100px;
+}
+
+.hero-card strong{
+  font-size:58px;
+  line-height:.9;
+  letter-spacing:-.06em;
+  position:relative;
+  z-index:1;
+}
+
+.hero-card span{
+  color:#bfc5bc;
+  position:relative;
+  z-index:1;
+}
+
+/* BUTTONS */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:15px 20px;
+  border-radius:15px;
+  font-weight:800;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-dark{
+  background:var(--dark);
+  color:#fff;
+}
+
+.btn-lime{
+  background:var(--lime);
+  color:var(--dark);
+}
+
+.btn-white{
+  background:white;
+  color:var(--dark);
+}
+
+/* MARQUEE */
+
+.marquee{
+  background:var(--lime);
+  overflow:hidden;
+  white-space:nowrap;
+  font-weight:900;
+  font-size:18px;
+  padding:13px 0;
+}
+
+.marquee div{
+  display:inline-block;
+  animation:run 22s linear infinite;
+}
+
+@keyframes run{
+  to{
+    transform:translateX(-50%);
+  }
+}
+
+/* SECTIONS */
+
+section{
+  padding:90px 0;
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:38px;
+}
+
+.section-head h2{
+  font-size:clamp(40px,5vw,70px);
+  line-height:.92;
+  letter-spacing:-.065em;
+  margin:8px 0 0;
+}
+
+.section-head p{
+  color:var(--muted);
+  max-width:420px;
+}
+
+/* CATALOG */
+
+.catalog{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.product{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  overflow:hidden;
+  transition:.3s;
+  position:relative;
+}
+
+.product:hover{
+  transform:translateY(-6px);
+  box-shadow:0 22px 60px rgba(20,25,20,.1);
+}
+
+.product-img{
+  height:245px;
+  background:#f0f2ee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.product-img img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:22px;
+  mix-blend-mode:multiply;
+  transition:.4s;
+}
+
+.product:hover img{
+  transform:scale(1.05);
+}
+
+.badge{
+  position:absolute;
+  left:16px;
+  top:16px;
+  background:var(--lime);
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:900;
+  z-index:2;
+}
+
+.product-info{
+  padding:22px;
+}
+
+.brand{
+  font-size:11px;
+  color:var(--muted);
+  font-weight:900;
+  letter-spacing:.12em;
+}
+
+.product h3{
+  font-size:24px;
+  letter-spacing:-.04em;
+  margin:7px 0 16px;
+}
+
+.product-bottom{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.price strong{
+  font-size:25px;
+}
+
+.old{
+  display:block;
+  text-decoration:line-through;
+  color:#9a9e98;
+  font-size:13px;
+}
+
+.open-product{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:var(--dark);
+  color:#fff;
+  font-size:20px;
+}
+
+/* SERVICES */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.service{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:28px;
+  min-height:190px;
+}
+
+.service b{
+  font-size:19px;
+}
+
+.service p{
+  color:var(--muted);
+  margin-bottom:0;
+}
+
+/* DARK SECTION */
+
+.dark-section{
+  background:var(--dark);
+  color:#fff;
+}
+
+.dark-section .eyebrow{
+  color:#9fa69d;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.step{
+  border-top:1px solid #40453f;
+  padding-top:20px;
+}
+
+.step-num{
+  font-size:12px;
+  color:#929991;
+}
+
+.step h3{
+  font-size:22px;
+  margin:35px 0 8px;
+}
+
+.step p{
+  color:#aeb4ad;
+  font-size:14px;
+}
+
+/* BENEFITS */
+
+.benefits{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.benefit{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.benefit b{
+  font-size:20px;
+}
+
+.benefit span{
+  color:var(--muted);
+}
+
+/* FAQ */
+
+.faq{
+  border-top:1px solid var(--line);
+}
+
+.faq-item{
+  border-bottom:1px solid var(--line);
+  cursor:pointer;
+}
+
+.faq-q{
+  padding:24px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-size:20px;
+  font-weight:800;
+}
+
+.plus{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:#e9ece6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  flex-shrink:0;
+  transition:.3s;
+}
+
+.faq-a{
+  max-width:760px;
+  color:var(--muted);
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:.35s ease;
+}
+
+.faq-item.open .faq-a{
+  max-height:200px;
+  opacity:1;
+  padding:0 0 24px;
+}
+
+.faq-item.open .plus{
+  transform:rotate(45deg);
+  background:var(--lime);
+}
+
+/* CTA */
+
+.cta{
+  padding-top:20px;
+}
+
+.cta-box{
+  background:var(--lime);
+  border-radius:30px;
+  padding:45px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.cta-box h2{
+  font-size:clamp(42px,6vw,76px);
+  line-height:.9;
+  letter-spacing:-.07em;
+  margin:10px 0 20px;
+}
+
+.cta-box p{
+  max-width:580px;
+  margin:0;
+}
+
+/* CONTACT */
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr .8fr;
+  gap:20px;
+  align-items:stretch;
+}
+
+.contact-copy{
+  background:var(--lime);
+  border-radius:30px;
+  padding:40px;
+}
+
+.contact-copy h2{
+  font-size:clamp(42px,6vw,76px);
+  line-height:.9;
+  letter-spacing:-.07em;
+  margin:10px 0 20px;
+}
+
+.contact-form{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:30px;
+  display:grid;
+  gap:12px;
+}
+
+.contact-form input,
+.contact-form select{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:15px;
+  background:#fff;
+  outline:none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus{
+  border-color:#999;
+}
+
+/* FOOTER */
+
+.footer{
+  padding:35px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:14px;
+}
+
+.footer .wrap{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* DRAWER */
+
+.drawer-backdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(10,12,10,.58);
+  backdrop-filter:blur(7px);
+  opacity:0;
+  pointer-events:none;
+  transition:.35s;
+  z-index:80;
+}
+
+.drawer-backdrop.open{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.drawer{
+  position:fixed;
+  right:0;
+  top:0;
+  height:100dvh;
+  width:min(650px,100%);
+  background:#fff;
+  z-index:90;
+  transform:translateX(105%);
+  transition:transform .45s cubic-bezier(.2,.8,.2,1);
+  box-shadow:-30px 0 90px rgba(0,0,0,.2);
+  overflow:auto;
+}
+
+.drawer.open{
+  transform:translateX(0);
+}
+
+.drawer-close{
+  position:absolute;
+  right:22px;
+  top:22px;
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:#eceeea;
+  font-size:25px;
+  z-index:2;
+}
+
+.drawer-top{
+  padding:70px 32px 0;
+}
+
+.drawer-photo{
+  height:290px;
+  background:#f1f3ef;
+  border-radius:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.drawer-photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:22px;
+  mix-blend-mode:multiply;
+}
+
+.drawer-content{
+  padding:28px 32px 40px;
+}
+
+.drawer-brand{
+  font-size:11px;
+  color:var(--muted);
+  letter-spacing:.12em;
+  font-weight:900;
+}
+
+.drawer h2{
+  font-size:42px;
+  line-height:.95;
+  letter-spacing:-.06em;
+  margin:7px 0 12px;
+}
+
+.drawer-price{
+  font-size:28px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.drawer-specs{
+  border-top:1px solid var(--line);
+  margin-bottom:26px;
+}
+
+.spec-row{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+  font-size:14px;
+}
+
+.spec-row span:first-child{
+  color:var(--muted);
+}
+
+.drawer-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+/* MODAL */
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(10,12,10,.6);
+  backdrop-filter:blur(8px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:.3s;
+  z-index:100;
+}
+
+.modal.show{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.modal-box{
+  width:min(500px,100%);
+  background:#fff;
+  border-radius:28px;
+  padding:35px;
+  position:relative;
+  transform:translateY(20px) scale(.98);
+  transition:.3s;
+}
+
+.modal.show .modal-box{
+  transform:none;
+}
+
+.modal-box h3{
+  font-size:36px;
+  line-height:.95;
+  letter-spacing:-.06em;
+  margin:0 0 12px;
+}
+
+.modal-box p{
+  color:var(--muted);
+}
+
+.close{
+  position:absolute;
+  right:18px;
+  top:18px;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#eceeea;
+  font-size:23px;
+}
+
+.form{
+  display:grid;
+  gap:12px;
+  margin-top:25px;
+}
+
+.form input,
+.form select{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:15px;
+  outline:none;
+}
+
+.form button{
+  width:100%;
+}
+
+/* TOAST */
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:24px;
+  transform:translate(-50%,20px);
+  background:var(--dark);
+  color:#fff;
+  padding:13px 18px;
+  border-radius:999px;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s;
+  z-index:120;
+  font-size:14px;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translate(-50%,0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .menu{
+    display:none;
+  }
+
+  .hero-grid,
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .catalog{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .steps{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero{
+    padding-top:60px;
+  }
+
+  .benefits{
+    grid-template-columns:1fr;
+  }
+
+  .cta-box{
+    display:block;
+  }
+
+  .cta-box .btn{
+    margin-top:25px;
+  }
+}
+
+@media(max-width:620px){
+
+  .wrap{
+    width:min(100% - 24px,1180px);
+  }
+
+  .top{
+    display:none;
+  }
+
+  .nav{
+    height:68px;
+  }
+
+  .phone{
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .hero-card{
+    min-height:240px;
+  }
+
+  .catalog{
+    grid-template-columns:1fr;
+  }
+
+  .section-head{
+    display:block;
+  }
+
+  .section-head p{
+    margin-top:18px;
+  }
+
+  .product-img{
+    height:260px;
+  }
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .contact-copy,
+  .contact-form{
+    padding:24px;
+  }
+
+  .drawer-top{
+    padding:65px 16px 0;
+  }
+
+  .drawer-content{
+    padding:22px 16px 35px;
+  }
+
+  .drawer-photo{
+    height:250px;
+  }
+
+  .drawer h2{
+    font-size:35px;
+  }
+
+  .drawer-actions{
+    grid-template-columns:1fr;
+  }
+
+  .footer .wrap{
+    display:block;
+  }
+
+  .footer .wrap>*+*{
+    margin-top:10px;
+  }
+
+  .cta-box{
+    padding:28px;
+  }
+
+  .modal-box{
+    padding:28px 22px;
+  }
+}
+
+/* =========================================================
+   DYNAMIC LAYER
+========================================================= */
+
+#scrollProgress{
+  position:fixed;
+  top:0;
+  left:0;
+  width:0;
+  height:3px;
+  background:var(--lime);
+  z-index:200;
+  box-shadow:0 0 14px rgba(184,232,62,.65);
+}
+
+.cursor-glow{
+  position:fixed;
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:1;
+  background:radial-gradient(
+    circle,
+    rgba(184,232,62,.14),
+    transparent 65%
+  );
+  transform:translate(-50%,-50%);
+  mix-blend-mode:multiply;
+  transition:opacity .25s;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(34px);
+  transition:
+    opacity .8s ease,
+    transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:none;
+}
+
+.product,
+.service,
+.step,
+.hero-card,
+.contact-copy,
+.contact-form,
+.benefit,
+.faq-item,
+.cta-box{
+  will-change:transform;
+}
+
+.product{
+  transform-style:preserve-3d;
+}
+
+.product:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      110deg,
+      transparent 35%,
+      rgba(255,255,255,.65),
+      transparent 65%
+    );
+  transform:translateX(-120%);
+  transition:transform .7s;
+  pointer-events:none;
+  z-index:3;
+}
+
+.product:hover:before{
+  transform:translateX(120%);
+}
+
+.btn,
+.open-product{
+  position:relative;
+  overflow:hidden;
+}
+
+.ripple{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(255,255,255,.45);
+  transform:scale(0);
+  animation:ripple .65s ease-out;
+  pointer-events:none;
+}
+
+@keyframes ripple{
+  to{
+    transform:scale(4);
+    opacity:0;
+  }
+}
+
+.hero-card:after{
+  animation:heroOrb 7s ease-in-out infinite alternate;
+}
+
+@keyframes heroOrb{
+  from{
+    transform:translate(0,0) scale(1);
+  }
+
+  to{
+    transform:translate(-25px,-18px) scale(1.12);
+  }
+}
+
+.product-img img{
+  animation:floatProduct 5s ease-in-out infinite;
+}
+
+.product:nth-child(2) .product-img img{
+  animation-delay:-1s;
+}
+
+.product:nth-child(3) .product-img img{
+  animation-delay:-2s;
+}
+
+.product:nth-child(4) .product-img img{
+  animation-delay:-3s;
+}
+
+.product:nth-child(5) .product-img img{
+  animation-delay:-4s;
+}
+
+.product:nth-child(6) .product-img img{
+  animation-delay:-2.5s;
+}
+
+.product:nth-child(7) .product-img img{
+  animation-delay:-3.5s;
+}
+
+@keyframes floatProduct{
+
+  0%,
+  100%{
+    translate:0 0;
+  }
+
+  50%{
+    translate:0 -5px;
+  }
+}
+
+.menu a{
+  position:relative;
+}
+
+.menu a:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:-7px;
+  height:2px;
+  background:var(--lime);
+  transition:right .25s;
+}
+
+.menu a:hover:after{
+  right:0;
+}
+
+.drawer-photo{
+  position:relative;
+}
+
+.drawer-photo:after{
+  content:"";
+  position:absolute;
+  inset:-50%;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 40%,
+      rgba(255,255,255,.55),
+      transparent 60%
+    );
+  transform:translateX(-45%) rotate(8deg);
+  animation:drawerShine 4s ease-in-out infinite;
+  pointer-events:none;
+}
+
+@keyframes drawerShine{
+
+  0%,
+  45%{
+    transform:translateX(-55%) rotate(8deg);
+  }
+
+  70%,
+  100%{
+    transform:translateX(55%) rotate(8deg);
+  }
+}
+
+@media(max-width:700px){
+
+  .cursor-glow{
+    display:none;
+  }
+
+  .reveal{
+    transform:translateY(20px);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top">
+  <div class="wrap">
+    <span>Кондиционеры · монтаж · сервис · ремонт</span>
+    <span>Самара · Новая Самара</span>
+  </div>
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+  <div class="wrap nav">
+
+    <a href="#" class="logo">
+      Сервис<span></span>Климат
+    </a>
+
+    <nav class="menu">
+      <a href="#catalog">Каталог</a>
+      <a href="#services">Услуги</a>
+      <a href="#about">Как работаем</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a
+      class="phone"
+      href="tel:+79276047957"
+    >
+      +7 (927) 604-79-57
+    </a>
+
+  </div>
+</header>
+
+
+<main>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+  <div class="wrap hero-grid">
+
+    <div class="reveal">
+
+      <div class="eyebrow">
+        Самара · Кондиционеры
+      </div>
+
+      <h1>
+        Прохлада,<br>
+        которую<br>
+        хочется оставить.
+      </h1>
+
+      <p>
+        Подберём кондиционер под помещение,
+        привезём, установим и останемся на связи
+        после монтажа.
+      </p>
+
+      <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
+
+        <button
+          class="btn btn-dark"
+          data-open
+        >
+          Подобрать кондиционер →
+        </button>
+
+        <a
+          href="#catalog"
+          class="btn btn-white"
+        >
+          Смотреть каталог
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-card reveal">
+
+      <span>
+        Стандартный монтаж
+      </span>
+
+      <strong>
+        от 11 000 ₽
+      </strong>
+
+      <span>
+        до 3 м трассы · монтаж под ключ
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     MARQUEE
+===================================================== -->
+
+<div class="marquee">
+  <div>
+    КОНДИЦИОНЕРЫ · МОНТАЖ · СЕРВИС · РЕМОНТ ·
+    КОНДИЦИОНЕРЫ · МОНТАЖ · СЕРВИС · РЕМОНТ ·
+    КОНДИЦИОНЕРЫ · МОНТАЖ · СЕРВИС · РЕМОНТ ·
+  </div>
+</div>
+
+
+<!-- =====================================================
+     CATALOG
+===================================================== -->
+
+<section
+  class="section"
+  id="catalog"
+>
+
+  <div class="wrap">
+
+    <div class="section-head reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          Каталог
+        </div>
+
+        <h2>
+          Выбираем<br>
+          по задаче.
+        </h2>
+
+      </div>
+
+      <p>
+        Несколько популярных моделей.
+        Нажмите на карточку, чтобы открыть
+        характеристики и фотографии.
+      </p>
+
+    </div>
+
+
+    <div
+      class="catalog"
+      id="catalogGrid"
+    >
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+  class="section"
+  id="services"
+  style="padding-top:20px"
+>
+
+  <div class="wrap">
+
+    <div class="section-head reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          Один подрядчик
+        </div>
+
+        <h2>
+          От первого вопроса<br>
+          до чистого воздуха.
+        </h2>
+
+      </div>
+
+      <p>
+        Не нужно отдельно искать продавца,
+        монтажников и сервис.
+        Всё в одном месте.
+      </p>
+
+    </div>
+
+
+    <div class="services">
+
+      <div class="service reveal">
+
+        <span class="step-num">
+          01
+        </span>
+
+        <h3>
+          Подбор
+        </h3>
+
+        <p>
+          Поможем выбрать модель по площади,
+          задаче и бюджету.
+        </p>
+
+      </div>
+
+
+      <div class="service reveal">
+
+        <span class="step-num">
+          02
+        </span>
+
+        <h3>
+          Монтаж
+        </h3>
+
+        <p>
+          Стандартная установка до 3 м —
+          от 11 000 ₽.
+        </p>
+
+      </div>
+
+
+      <div class="service reveal">
+
+        <span class="step-num">
+          03
+        </span>
+
+        <h3>
+          Сервис
+        </h3>
+
+        <p>
+          Обслуживание и профилактика
+          кондиционеров.
+        </p>
+
+      </div>
+
+
+      <div class="service reveal">
+
+        <span class="step-num">
+          04
+        </span>
+
+        <h3>
+          Ремонт
+        </h3>
+
+        <p>
+          Диагностика и восстановление
+          работы системы.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
+
+<section
+  class="section dark-section"
+  id="about"
+>
+
+  <div class="wrap">
+
+    <div class="section-head reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          Как всё происходит
+        </div>
+
+        <h2>
+          Просто.<br>
+          От заявки до прохлады.
+        </h2>
+
+      </div>
+
+      <p>
+        Никаких длинных анкет и непонятных
+        расчётов. Сначала разбираемся с задачей,
+        затем предлагаем решение.
+      </p>
+
+    </div>
+
+
+    <div class="steps">
+
+      <div class="step reveal">
+
+        <div class="step-num">
+          01
+        </div>
+
+        <h3>
+          Рассказываете,
+          что нужно
+        </h3>
+
+        <p>
+          Площадь, помещение и пожелания —
+          остальное уточним сами.
+        </p>
+
+      </div>
+
+
+      <div class="step reveal">
+
+        <div class="step-num">
+          02
+        </div>
+
+        <h3>
+          Получаете
+          варианты
+        </h3>
+
+        <p>
+          Предложим подходящие модели
+          и объясним разницу без перегруза
+          терминами.
+        </p>
+
+      </div>
+
+
+      <div class="step reveal">
+
+        <div class="step-num">
+          03
+        </div>
+
+        <h3>
+          Согласовываем
+          монтаж
+        </h3>
+
+        <p>
+          Договариваемся о времени
+          и объёме работ.
+        </p>
+
+      </div>
+
+
+      <div class="step reveal">
+
+        <div class="step-num">
+          04
+        </div>
+
+        <h3>
+          Запускаем
+          систему
+        </h3>
+
+        <p>
+          Устанавливаем, проверяем
+          и передаём готовый результат.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section class="section">
+
+  <div class="wrap">
+
+    <div class="section-head reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          Почему с нами
+        </div>
+
+        <h2>
+          Меньше хлопот.<br>
+          Больше понятности.
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="benefits">
+
+      <div class="benefit reveal">
+
+        <b>
+          Подбор без перегруза
+        </b>
+
+        <span>
+          Не заставляем разбираться
+          в десятках характеристик.
+          Выбираем по реальной задаче.
+        </span>
+
+      </div>
+
+
+      <div class="benefit reveal">
+
+        <b>
+          Оборудование + монтаж
+        </b>
+
+        <span>
+          Можно закрыть вопрос
+          с кондиционером в одном месте —
+          от выбора до запуска.
+        </span>
+
+      </div>
+
+
+      <div class="benefit reveal">
+
+        <b>
+          Понятная стоимость
+        </b>
+
+        <span>
+          Стандартный монтаж до 3 м —
+          от 11 000 ₽.
+          Дополнительные работы
+          согласовываются заранее.
+        </span>
+
+      </div>
+
+
+      <div class="benefit reveal">
+
+        <b>
+          Сервис после установки
+        </b>
+
+        <span>
+          Поможем с обслуживанием
+          и ремонтом, когда кондиционеру
+          потребуется внимание.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section
+  class="section"
+  id="faq"
+>
+
+  <div class="wrap">
+
+    <div class="section-head reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          FAQ
+        </div>
+
+        <h2>
+          Коротко<br>
+          о главном.
+        </h2>
+
+      </div>
+
+      <p>
+        Если вопроса нет — просто оставьте заявку.
+        Разберём вашу ситуацию.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+      <div class="faq-item reveal">
+
+        <div class="faq-q">
+
+          <span>
+            Сколько стоит стандартный монтаж?
+          </span>
+
+          <span class="plus">
+            +
+          </span>
+
+        </div>
+
+        <div class="faq-a">
+
+          Стандартный монтаж кондиционера
+          до 3 м — от 11 000 ₽.
+          Итоговая стоимость зависит
+          от конкретных условий установки.
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+        <div class="faq-q">
+
+          <span>
+            Поможете выбрать кондиционер?
+          </span>
+
+          <span class="plus">
+            +
+          </span>
+
+        </div>
+
+        <div class="faq-a">
+
+          Да. Достаточно сообщить площадь,
+          назначение помещения и желаемый бюджет —
+          предложим подходящие варианты.
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+        <div class="faq-q">
+
+          <span>
+            Есть ли гарантия?
+          </span>
+
+          <span class="plus">
+            +
+          </span>
+
+        </div>
+
+        <div class="faq-a">
+
+          На оборудование гарантия зависит
+          от бренда и типа оборудования
+          и составляет от 1 года до 5 лет.
+          Условия уточняются для выбранной модели.
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+        <div class="faq-q">
+
+          <span>
+            Работаете в Самаре?
+          </span>
+
+          <span class="plus">
+            +
+          </span>
+
+        </div>
+
+        <div class="faq-a">
+
+          Да, компания работает в Самаре.
+          Точную возможность выезда и условия
+          лучше уточнить при обращении.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+  <div class="wrap">
+
+    <div class="cta-box reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          Есть задача?
+        </div>
+
+        <h2>
+          Давайте подберём<br>
+          решение.
+        </h2>
+
+        <p>
+          Оставьте номер — свяжемся,
+          уточним помещение и предложим
+          подходящий вариант.
+        </p>
+
+      </div>
+
+      <button
+        class="btn btn-dark"
+        data-open
+      >
+        Получить расчёт →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACTS
+===================================================== -->
+
+<section
+  class="section"
+  id="contacts"
+>
+
+  <div class="wrap">
+
+    <div class="contact">
+
+      <div class="contact-copy reveal">
+
+        <div class="eyebrow">
+          Сервис Климат
+        </div>
+
+        <h2>
+          Подберём<br>
+          кондиционер<br>
+          под вашу комнату.
+        </h2>
+
+        <p>
+          Оставьте номер.
+          Перезвоним и подскажем,
+          какие варианты есть сейчас.
+        </p>
+
+        <div style="margin-top:30px">
+
+          <a
+            href="tel:+79276047957"
+            class="btn btn-dark"
+          >
+            +7 (927) 604-79-57
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <form
+        class="contact-form reveal"
+        onsubmit="sendForm(event)"
+      >
+
+        <input
+          required
+          placeholder="Ваше имя"
+        >
+
+        <input
+          required
+          type="tel"
+          placeholder="Телефон"
+        >
+
+        <select>
+
+          <option>
+            Что нужно?
+          </option>
+
+          <option>
+            Подобрать кондиционер
+          </option>
+
+          <option>
+            Нужен монтаж
+          </option>
+
+          <option>
+            Нужен ремонт
+          </option>
+
+          <option>
+            Обслуживание
+          </option>
+
+        </select>
+
+        <button class="btn btn-dark">
+          Отправить заявку →
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+  <div class="wrap">
+
+    <div>
+      © 2026 «Сервис Климат»
+    </div>
+
+    <div>
+
+      <a href="tel:+79276047957">
+        +7 (927) 604-79-57
+      </a>
+
+      ·
+
+      <a href="mailto:servisklimat63@mail.ru">
+        servisklimat63@mail.ru
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =====================================================
+     MODAL
+===================================================== -->
+
+<div
+  class="modal"
+  id="modal"
+>
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      id="modalClose"
+    >
+      ×
+    </button>
+
+    <h3>
+      Подберём кондиционер
+    </h3>
+
+    <p>
+      Оставьте контакты —
+      зададим пару вопросов
+      и предложим варианты.
+    </p>
+
+    <form
+      class="form"
+      id="modalForm"
+    >
+
+      <input
+        required
+        name="name"
+        placeholder="Ваше имя"
+      >
+
+      <input
+        required
+        name="phone"
+        type="tel"
+        placeholder="Телефон"
+      >
+
+      <select name="area">
+
+        <option value="">
+          Площадь помещения
+        </option>
+
+        <option>
+          до 20 м²
+        </option>
+
+        <option>
+          20–35 м²
+        </option>
+
+        <option>
+          35–50 м²
+        </option>
+
+        <option>
+          50+ м²
+        </option>
+
+      </select>
+
+      <button class="btn btn-lime">
+        Отправить заявку
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     PRODUCT DRAWER
+===================================================== -->
+
+<div
+  class="drawer-backdrop"
+  id="backdrop"
+></div>
+
+
+<aside
+  class="drawer"
+  id="drawer"
+>
+
+  <button
+    class="drawer-close"
+    id="drawerClose"
+  >
+    ×
+  </button>
+
+
+  <div class="drawer-top">
+
+    <div class="drawer-photo">
+
+      <img
+        id="drawerImg"
+        src=""
+        alt=""
+      >
+
+    </div>
+
+  </div>
+
+
+  <div class="drawer-content">
+
+    <div
+      class="drawer-brand"
+      id="drawerBrand"
+    ></div>
+
+    <h2 id="drawerTitle"></h2>
+
+    <div
+      class="drawer-price"
+      id="drawerPrice"
+    ></div>
+
+    <div
+      class="drawer-specs"
+      id="drawerSpecs"
+    ></div>
+
+    <div class="drawer-actions">
+
+      <button
+        class="btn btn-lime"
+        onclick="focusContact()"
+      >
+        Заказать с установкой
+      </button>
+
+      <button
+        class="btn btn-dark"
+        onclick="focusContact()"
+      >
+        Получить консультацию
+      </button>
+
+    </div>
+
+  </div>
+
+</aside>
+
+
+<!-- TOAST -->
+
+<div
+  class="toast"
+  id="toast"
+>
+  Заявка отправлена.
+  Мы свяжемся с вами.
+</div>
+
+
+<script>
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+const products = [
+
+  {
+    name:'Coolberg Runa CS-07R1',
+    brand:'COOLBERG',
+    price:'23 700 ₽',
+    old:'26 700 ₽',
+    badge:'−3 000 ₽',
+
+    img:'https://coolberg.pro/upload/resize_cache/iblock/ecd/ocbku1krhrka32c6kqmdgia30v5pfjww/630_630_0/split_sistema_soolberg_runa_on_off_cs_07r1_in_cs_07r1_out.png',
+
+    specs:[
+      ['Холодопроизводительность','2,05 кВт'],
+      ['Теплопроизводительность','2,2 кВт'],
+      ['Хладагент','R32'],
+      ['Шум внутреннего блока','27–39 дБ(А)'],
+      ['Энергоэффективность','A'],
+      ['Гарантия','3 года']
+    ]
+  },
+
+
+  {
+    name:'Coolberg City CS-07SH1',
+    brand:'COOLBERG',
+    price:'26 200 ₽',
+    old:'31 200 ₽',
+    badge:'−5 000 ₽',
+
+    img:'https://www.severcon.ru/upload/resize_cache/iblock/9a2/o2wv1smx7yta55i6x7oexpim2jx9ff5z/630_630_0/Render_Project_Coolberg_City_005.png',
+
+    specs:[
+      ['Тип','On/Off'],
+      ['Класс энергоэффективности','A'],
+      ['Функция','I Feel'],
+      ['Распределение воздуха','4D Air Flow'],
+      ['Wi-Fi','Ready'],
+      ['Хладагент','R32']
+    ]
+  },
+
+
+  {
+    name:'Kentatsu Haruki',
+    brand:'KENTATSU',
+    price:'26 490 ₽',
+    old:'29 490 ₽',
+    badge:'−3 000 ₽',
+
+    img:'https://daichi.ru/upload/iblock/e75/ziqge2i18xbem7sgyrfrrtncrm0q9syw/79m2lhn0aba72cacf8pq30333h4bvgu7.jpg',
+
+    specs:[
+      ['Тип','On/Off'],
+      ['Хладагент','R32'],
+      ['Класс','A'],
+      ['Серия','HARUKI'],
+      ['Управление','Пульт ДУ'],
+      ['Wi-Fi','Опционально']
+    ]
+  },
+
+
+  {
+    name:'Ferrum TITAN',
+    brand:'FERRUM',
+    price:'27 800 ₽',
+    old:'31 800 ₽',
+    badge:'−4 000 ₽',
+
+    img:'https://mircli.ru/_next/img/media/464676/Ferrum_Titan_iFIS07VR1iFOS07VR1_LE.png',
+
+    specs:[
+      ['Тип','DC Inverter'],
+      ['Холодопроизводительность','≈2,1 кВт'],
+      ['Хладагент','R32'],
+      ['Серия','TITAN'],
+      ['Управление','Пульт ДУ'],
+      ['Монтаж','Настенный']
+    ]
+  },
+
+
+  {
+    name:'Royal Clima Pandora',
+    brand:'ROYAL CLIMA',
+    price:'30 290 ₽',
+    old:'',
+    badge:'Популярная модель',
+
+    img:'https://climstore.ru/upload/resize_cache/iblock/7a9/700_700_1/w5u7g09kj0p61v6u8l2c0p1zkvnpbczo.jpg',
+
+    specs:[
+      ['Серия','PANDORA'],
+      ['Тип','Настенная сплит-система'],
+      ['Энергоэффективность','A'],
+      ['Функция','3D AUTO AIR'],
+      ['Фильтрация','Silver Ion / Active Carbon*'],
+      ['Гарантия','3 года']
+    ]
+  },
+
+
+  {
+    name:'Midea Primary',
+    brand:'MIDEA',
+    price:'31 490 ₽',
+    old:'',
+    badge:'Надёжный выбор',
+
+    img:'https://air-midea.com/upload/iblock/702/r05f2zh29vduv14kzaf39sj5k6yqog9n.jpg',
+
+    specs:[
+      ['Серия','Primary'],
+      ['Тип','Инверторная сплит-система'],
+      ['Хладагент','R32'],
+      ['Управление','Пульт ДУ'],
+      ['Охлаждение','Да'],
+      ['Обогрев','Да']
+    ]
+  },
+
+
+  {
+    name:'Coolberg Runa Inverter',
+    brand:'COOLBERG · INVERTER',
+    price:'31 900 ₽',
+    old:'37 100 ₽',
+    badge:'−5 200 ₽',
+
+    img:'https://climstore.ru/upload/iblock/16d/gt3mahmc70uvf39xihko69dwzjrjgo3t.jpg',
+
+    specs:[
+      ['Тип','DC Inverter'],
+      ['Холодопроизводительность','2,2 кВт'],
+      ['Теплопроизводительность','2,29 кВт'],
+      ['Шум','26–27 дБ(А)'],
+      ['Хладагент','R32'],
+      ['Энергоэффективность','A']
+    ]
+  }
+
+];
+
+
+/* =====================================================
+   BUILD CATALOG
+===================================================== */
+
+const grid =
+  document.getElementById('catalogGrid');
+
+
+products.forEach((p,i)=>{
+
+  grid.insertAdjacentHTML(
+    'beforeend',
+
+    `
+    <article class="product">
+
+      <div class="product-img">
+
+        <span class="badge">
+          ${p.badge}
+        </span>
+
+        <img
+          src="${p.img}"
+          alt="${p.name}"
+          loading="lazy"
+        >
+
+      </div>
+
+      <div class="product-info">
+
+        <div class="brand">
+          ${p.brand}
+        </div>
+
+        <h3>
+          ${p.name}
+        </h3>
+
+        <div class="product-bottom">
+
+          <div class="price">
+
+            ${
+              p.old
+              ?
+              `<span class="old">${p.old}</span>`
+              :
+              ''
+            }
+
+            <strong>
+              ${p.price}
+            </strong>
+
+          </div>
+
+          <button
+            class="open-product"
+            aria-label="Подробнее"
+            onclick="openProduct(${i})"
+          >
+            ↗
+          </button>
+
+        </div>
+
+      </div>
+
+    </article>
+    `
+  );
+
+});
+
+
+/* =====================================================
+   DRAWER
+===================================================== */
+
+const drawer =
+  document.getElementById('drawer');
+
+const backdrop =
+  document.getElementById('backdrop');
+
+
+function openProduct(i){
+
+  const p = products[i];
+
+  document.getElementById('drawerImg').src =
+    p.img;
+
+  document.getElementById('drawerImg').alt =
+    p.name;
+
+  document.getElementById('drawerBrand').textContent =
+    p.brand;
+
+  document.getElementById('drawerTitle').textContent =
+    p.name;
+
+  document.getElementById('drawerPrice').innerHTML =
+    (
+      p.old
+      ?
+      `<span class="old">${p.old}</span>`
+      :
+      ''
+    )
+    +
+    p.price;
+
+  document.getElementById('drawerSpecs').innerHTML =
+    p.specs
+      .map(
+        s =>
+        `
+        <div class="spec-row">
+
+          <span>
+            ${s[0]}
+          </span>
+
+          <b>
+            ${s[1]}
+          </b>
+
+        </div>
+        `
+      )
+      .join('');
+
+  drawer.classList.add('open');
+
+  backdrop.classList.add('open');
+
+  document.body.classList.add('lock');
+}
+
+
+function closeDrawer(){
+
+  drawer.classList.remove('open');
+
+  backdrop.classList.remove('open');
+
+  document.body.classList.remove('lock');
+}
+
+
+document
+  .getElementById('drawerClose')
+  .onclick = closeDrawer;
+
+
+backdrop.onclick =
+  closeDrawer;
+
+
+document.addEventListener(
+  'keydown',
+  e => {
+
+    if(e.key === 'Escape'){
+      closeDrawer();
+    }
+
+  }
+);
+
+
+/* =====================================================
+   FOCUS CONTACT
+===================================================== */
+
+function focusContact(){
+
+  closeDrawer();
+
+  setTimeout(
+    () => {
+
+      document
+        .getElementById('contacts')
+        .scrollIntoView({
+          behavior:'smooth'
+        });
+
+    },
+    100
+  );
+
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+function sendForm(e){
+
+  e.preventDefault();
+
+  const toast =
+    document.getElementById('toast');
+
+  toast.classList.add('show');
+
+  e.target.reset();
+
+  setTimeout(
+    () => {
+      toast.classList.remove('show');
+    },
+    3000
+  );
+
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+document
+  .querySelectorAll('.faq-item')
+  .forEach(item => {
+
+    item.addEventListener(
+      'click',
+      () => {
+
+        item.classList.toggle('open');
+
+      }
+    );
+
+  });
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+const modal =
+  document.getElementById('modal');
+
+
+document
+  .querySelectorAll('[data-open]')
+  .forEach(button => {
+
+    button.addEventListener(
+      'click',
+      () => {
+
+        modal.classList.add('show');
+
+      }
+    );
+
+  });
+
+
+document
+  .getElementById('modalClose')
+  .onclick =
+  () => {
+
+    modal.classList.remove('show');
+
+  };
+
+
+modal.addEventListener(
+  'click',
+  e => {
+
+    if(e.target === modal){
+
+      modal.classList.remove('show');
+
+    }
+
+  }
+);
+
+
+document
+  .getElementById('modalForm')
+  .addEventListener(
+    'submit',
+    e => {
+
+      e.preventDefault();
+
+      modal.classList.remove('show');
+
+      const toast =
+        document.getElementById('toast');
+
+      toast.textContent =
+        'Заявка отправлена. Мы свяжемся с вами.';
+
+      toast.classList.add('show');
+
+      e.target.reset();
+
+      setTimeout(
+        () => {
+
+          toast.classList.remove('show');
+
+        },
+        3000
+      );
+
+    }
+  );
+
+
+/* =====================================================
+   SCROLL PROGRESS
+===================================================== */
+
+const progress =
+  document.createElement('div');
+
+progress.id =
+  'scrollProgress';
+
+document.body.appendChild(progress);
+
+
+window.addEventListener(
+  'scroll',
+  () => {
+
+    const h =
+      document.documentElement.scrollHeight -
+      innerHeight;
+
+    progress.style.width =
+      (
+        h > 0
+        ?
+        (scrollY / h) * 100
+        :
+        0
+      )
+      + '%';
+
+  }
+);
+
+
+/* =====================================================
+   CURSOR GLOW
+===================================================== */
+
+const glow =
+  document.createElement('div');
+
+glow.className =
+  'cursor-glow';
+
+document.body.appendChild(glow);
+
+
+window.addEventListener(
+  'pointermove',
+  e => {
+
+    glow.style.left =
+      e.clientX + 'px';
+
+    glow.style.top =
+      e.clientY + 'px';
+
+  }
+);
+
+
+/* =====================================================
+   REVEAL ON SCROLL
+===================================================== */
+
+const revealObserver =
+  new IntersectionObserver(
+    entries => {
+
+      entries.forEach(
+        entry => {
+
+          if(entry.isIntersecting){
+
+            entry.target
+              .classList
+              .add('visible');
+
+            revealObserver
+              .unobserve(entry.target);
+
+          }
+
+        }
+      );
+
+    },
+    {
+      threshold:.12
+    }
+  );
+
+
+document
+  .querySelectorAll(
+    '.hero-grid>*,' +
+    '.section-head,' +
+    '.product,' +
+    '.service,' +
+    '.step,' +
+    '.benefit,' +
+    '.faq-item,' +
+    '.cta-box,' +
+    '.contact-copy,' +
+    '.contact-form'
+  )
+  .forEach(
+    (el,i) => {
+
+      el.classList.add('reveal');
+
+      el.style.transitionDelay =
+        Math.min(
+          i * 45,
+          280
+        ) + 'ms';
+
+      revealObserver.observe(el);
+
+    }
+  );
+
+
+/* =====================================================
+   RIPPLE
+===================================================== */
+
+function addRipple(e){
+
+  const button =
+    e.currentTarget;
+
+  const ripple =
+    document.createElement('span');
+
+  ripple.className =
+    'ripple';
+
+  const rect =
+    button.getBoundingClientRect();
+
+  const size =
+    Math.max(
+      rect.width,
+      rect.height
+    );
+
+  ripple.style.width =
+    size + 'px';
+
+  ripple.style.height =
+    size + 'px';
+
+  ripple.style.left =
+    (
+      e.clientX -
+      rect.left -
+      size / 2
+    )
+    + 'px';
+
+  ripple.style.top =
+    (
+      e.clientY -
+      rect.top -
+      size / 2
+    )
+    + 'px';
+
+  button.appendChild(ripple);
+
+  setTimeout(
+    () => ripple.remove(),
+    700
+  );
+
+}
+
+
+document
+  .querySelectorAll(
+    '.btn,.open-product'
+  )
+  .forEach(
+    button => {
+
+      button.addEventListener(
+        'click',
+        addRipple
+      );
+
+    }
+  );
+
+
+/* =====================================================
+   PRODUCT 3D TILT
+===================================================== */
+
+if(
+  matchMedia(
+    '(pointer:fine)'
+  ).matches
+){
+
+  document
+    .querySelectorAll('.product')
+    .forEach(card => {
+
+      card.addEventListener(
+        'pointermove',
+        e => {
+
+          const r =
+            card.getBoundingClientRect();
+
+          const x =
+            (e.clientX - r.left) /
+            r.width -
+            .5;
+
+          const y =
+            (e.clientY - r.top) /
+            r.height -
+            .5;
+
+          card.style.transform =
+            `
+            perspective(900px)
+            rotateX(${-y * 5}deg)
+            rotateY(${x * 5}deg)
+            translateY(-6px)
+            `;
+
+        }
+      );
+
+
+      card.addEventListener(
+        'pointerleave',
+        () => {
+
+          card.style.transform =
+            '';
+
+        }
+      );
+
+    });
+
+
+  /* MAGNETIC BUTTONS */
+
+  document
+    .querySelectorAll('.btn')
+    .forEach(button => {
+
+      button.addEventListener(
+        'pointermove',
+        e => {
+
+          const r =
+            button.getBoundingClientRect();
+
+          button.style.transform =
+            `
+            translate(
+              ${(e.clientX - r.left - r.width / 2) * .08}px,
+              ${(e.clientY - r.top - r.height / 2) * .08}px
+            )
+            `;
+
+        }
+      );
+
+
+      button.addEventListener(
+        'pointerleave',
+        () => {
+
+          button.style.transform =
+            '';
+
+        }
+      );
+
+    });
+
+}
+
+
+/* =====================================================
+   HERO PARALLAX
+===================================================== */
+
+const heroCard =
+  document.querySelector(
+    '.hero-card'
+  );
+
+
+window.addEventListener(
+  'scroll',
+  () => {
+
+    if(
+      heroCard &&
+      innerWidth > 700
+    ){
+
+      const y =
+        Math.min(
+          scrollY * .08,
+          35
+        );
+
+      heroCard.style.translate =
+        `0 ${y}px`;
+
+    }
+
+  }
+);
+
+
+/* =====================================================
+   DRAWER IMAGE ANIMATION
+===================================================== */
+
+const oldOpen =
+  openProduct;
+
+
+openProduct =
+  function(i){
+
+    oldOpen(i);
+
+    requestAnimationFrame(
+      () => {
+
+        document
+          .querySelector(
+            '.drawer-photo'
+          )
+          ?.animate(
+            [
+              {
+                transform:'scale(.94)',
+                opacity:.6
+              },
+              {
+                transform:'scale(1)',
+                opacity:1
+              }
+            ],
+            {
+              duration:500,
+              easing:
+                'cubic-bezier(.2,.8,.2,1)'
+            }
+          );
+
+      }
+    );
+
+  };
+
+</script>
+
+</body>
+</html>
